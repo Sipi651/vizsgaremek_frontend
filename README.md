@@ -1,4 +1,4 @@
-# GazdiVár – Elveszett és talált kutyák webalkalmazás
+# GazdiVár – Elveszett és talált kutyák webalkalmazássssssss
 
 A **GazdiVár** egy modern, reszponzív közösségi webalkalmazás, amelynek célja, hogy segítse az elveszett kutyák hazajutását. A felhasználók bejelenthetnek elveszett vagy talált kutyákat, megtekinthetik a bejelentéseket, kezelhetik saját feltöltéseiket, valamint módosíthatják profiladataikat.
 
