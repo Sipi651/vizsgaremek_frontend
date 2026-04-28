@@ -2,12 +2,18 @@
 
 A **GazdiVár** egy modern, reszponzív közösségi webalkalmazás, amelynek célja, hogy segítse az elveszett kutyák hazajutását. A felhasználók bejelenthetnek elveszett vagy talált kutyákat, megtekinthetik a bejelentéseket, kezelhetik saját feltöltéseiket, valamint módosíthatják profiladataikat.
 
+
+## 🙋‍♂️Készítette
+
+- [Sipos Árpád Dávid](https://github.com/Sipi651)
+- [Szabó Bálint](https://github.com/szabobalint17)
+
+
 ## Tartalomjegyzék
 
 - [Projekt célja](#projekt-célja)
 - [Fő funkciók](#fő-funkciók)
 - [Felhasználói szerepkörök](#felhasználói-szerepkörök)
-- [Adatbázis felépítése](#adatbázis-felépítése)
 - [Képernyőképek](#képernyőképek)
 - [Használt technológiák](#használt-technológiák)
 - [Telepítés és futtatás](#telepítés-és-futtatás)
@@ -41,51 +47,15 @@ Az alkalmazásban két fő szerepkör található:
 | Felhasználó | Bejelentések létrehozása, saját adatok kezelése, kutyák megtekintése |
 | Admin | Felhasználók kezelése, szerepkörök módosítása, törlés |
 
-## Adatbázis felépítése
 
-Az adatbázis három fő táblából áll:
+## Prototípus terv
+A fejlesztési szakaszt megelőzte egy átfogó terv készítése a felhasználói felületről. A tervezet részben tükrözi a kész tervezetet. A UI prototípus kialakításához a figma szoftvert használtuk.
 
-### `felhasznalok`
+<img width="1318" height="742" alt="image" src="https://github.com/user-attachments/assets/a6c6f345-3883-4295-8146-77b7c5068051" />
 
-A regisztrált felhasználók adatait tárolja.
 
-Főbb mezők:
+[FIGMA LINK](https://www.figma.com/design/jYfIbxSzqxyuYtYxsyVMEG/Untitled?node-id=0-1&t=iGDWJakiibYh3ZAU-1)
 
-- `id`
-- `email`
-- `jelszo`
-- `szerepkor`
-- `telefonszam`
-- `teljes_nev`
-- `letrehozva`
-
-### `jelentesek`
-
-Az elveszett és talált kutyák bejelentéseit tárolja.
-
-Főbb mezők:
-
-- `id`
-- `tipus`
-- `felhasznalo_id`
-- `nev`
-- `kutyafajta_id`
-- `nem`
-- `szin`
-- `utolso_latas_hely`
-- `utolso_latas_ido`
-- `leiras`
-- `kep`
-- `letrehozva`
-
-### `kutyafajtak`
-
-A választható kutyafajtákat tárolja.
-
-Főbb mezők:
-
-- `id`
-- `megnevezes`
 
 ## Képernyőképek:
 
@@ -117,9 +87,10 @@ Főbb mezők:
 
 <img width="944" height="409" alt="Adminpanel" src="https://github.com/user-attachments/assets/8ca88b3e-861c-4a9b-a04c-25711e7b4272" />
 
-### Adatbázis diagram:
+### Mobilnézet
+A mobilnézet kialakítására is nagy hangsúlyt fektettünk.
 
-<img width="659" height="271" alt="sqlkutya" src="https://github.com/user-attachments/assets/a1b2104a-43e1-4055-b2eb-94cee2da37b2" />
+
 
 ## Használt technológiák
 
@@ -153,27 +124,6 @@ npm install
 npm run dev
 ```
 
-### 4. Adatbázis beállítása
-
-Hozz létre egy MySQL adatbázist, majd importáld a projekt SQL fájlját.
-
-Példa adatbázisnév:
-
-```sql
-CREATE DATABASE gazdivar;
-```
-
-### 5. Környezeti változók beállítása
-
-Hozz létre egy `.env` fájlt, és add meg a szükséges adatbázis-kapcsolati adatokat.
-
-```env
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=
-DB_NAME=gazdivar
-```
-
 ## Tesztelési szempontok
 
 A vizsga során az alábbi funkciók tesztelhetők:
@@ -199,7 +149,13 @@ A vizsga során az alábbi funkciók tesztelhetők:
 - Képfeltöltés optimalizálása
 - Mobilalkalmazás készítése
 
-## Készítő
+## Teszteléshez felhasználók
+Admin
+- email: admin@gmail.com
+- jelszo: a
 
-Készítette: **Szabó Bálint**  
-Projekt típusa: **Vizsgaremek**
+Felhasználó
+- email: felhasznalo@gmail.com
+- jelszó: asd
+
+Deploy link: [LINK](https://gazdivar.netlifly.app/)
