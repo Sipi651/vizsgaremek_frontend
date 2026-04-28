@@ -90,6 +90,8 @@ A fejlesztési szakaszt megelőzte egy átfogó terv készítése a felhasznál�
 ### Mobilnézet
 A mobilnézet kialakítására is nagy hangsúlyt fektettünk.
 
+<img width="3366" height="1500" alt="Group 4" src="https://github.com/user-attachments/assets/7f9e8575-5526-421b-a892-72a13cb0afb3" />
+
 
 
 ## Használt technológiák
