@@ -160,4 +160,4 @@ Felhasználó
 - email: felhasznalo@gmail.com
 - jelszó: asd
 
-Deploy link: [LINK](https://gazdivar.netlifly.app/)
+Deploy link: [LINK](https://gazdivar.netlify.app/)
